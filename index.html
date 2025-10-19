@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cozia AI - AI Agents, Websites, and Apps</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="bg-black bg-opacity-50 backdrop-blur-lg sticky top-0 z-50 border-b border-gray-800">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold gradient-text">Cozia AI Agent</a>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#services" class="text-gray-300 hover:text-white transition">Services</a>
+                <a href="#about" class="text-gray-300 hover:text-white transition">About</a>
+                <a href="#book-appointment" class="text-gray-300 hover:text-white transition">Contact</a>
+            </div>
+            <a href="#book-appointment" class="hidden md:block cta-button text-white font-semibold py-2 px-6 rounded-lg">Book Appointment</a>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="#services" class="block py-2 text-gray-300 hover:text-white">Services</a>
+            <a href="#about" class="block py-2 text-gray-300 hover:text-white">About</a>
+            <a href="#book-appointment" class="block py-2 text-gray-300 hover:text-white">Contact</a>
+            <a href="#book-appointment" class="block mt-2 cta-button text-white text-center font-semibold py-2 px-6 rounded-lg">Book Appointment</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content" class="container mx-auto px-6 py-16 md:py-24">
+        
+        <!-- Hero Section -->
+        <section class="text-center mb-24 md:mb-32">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">
+                Custom <span class="gradient-text">AI Agents, Websites, and Apps</span> for Your Business
+            </h1>
+            <p class="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto mb-8">
+                We build cutting-edge artificial intelligence solutions, stunning websites, and powerful mobile applications to drive your success.
+            </p>
+            <a href="#services" class="cta-button text-white font-bold py-3 px-8 rounded-lg text-lg">Explore Our Services</a>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="mb-24 md:mb-32">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1: AI Agents -->
+                <div class="feature-card p-8 rounded-xl">
+                    <svg class="h-10 w-10 mb-4 text-sky-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M2 14h2"/><path d="M20 14h2"/><path d="M15 13v2"/><path d="M9 13v2"/></svg>
+                    <h3 class="text-2xl font-semibold mb-3">AI Agents</h3>
+                    <p class="text-gray-400">Automate tasks, enhance customer support, and streamline operations with intelligent, custom-built AI agents.</p>
+                </div>
+                <!-- Service 2: Websites -->
+                <div class="feature-card p-8 rounded-xl">
+                    <svg class="h-10 w-10 mb-4 text-indigo-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="16" x="3" y="4" rx="2"/><path d="M8 12h8"/><path d="M12 8v8"/></svg>
+                    <h3 class="text-2xl font-semibold mb-3">Websites</h3>
+                    <p class="text-gray-400">From sleek landing pages to complex e-commerce platforms, we design and develop websites that captivate and convert.</p>
+                </div>
+                <!-- Service 3: Apps -->
+                <div class="feature-card p-8 rounded-xl">
+                    <svg class="h-10 w-10 mb-4 text-purple-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></svg>
+                    <h3 class="text-2xl font-semibold mb-3">Mobile Apps</h3>
+                    <p class="text-gray-400">Engage your users on the go with intuitive and powerful iOS and Android applications tailored to your business needs.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="mb-24 md:mb-32 bg-gray-900/50 rounded-xl p-8 md:p-12 border border-gray-800">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4"><span class="gradient-text">Our Mission</span></h2>
+                    <p class="text-gray-400 leading-relaxed">
+                        At Cozia AI, our mission is to democratize cutting-edge technology. We believe that AI and custom software have the power to solve complex problems, and we are dedicated to creating accessible, powerful, and ethical tools that empower businesses of all sizes to innovate and thrive in a rapidly changing digital landscape.
+                    </p>
+                </div>
+                <div class="text-center">
+                    <img src="What-Are-Generative-AI-Agents-and-Why-Top-Companies-Implement-Them_-3-1.jpg" alt="AI Vision" class="rounded-lg mx-auto shadow-2xl">
+                </div>
+            </div>
+        </section>
+
+        <!-- Appointment Booking Section -->
+        <section id="book-appointment">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Book Your Free Consultation</h2>
+            <div class="max-w-2xl mx-auto">
+                <form id="appointment-form" class="space-y-6">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-300">Full Name</label>
+                        <input type="text" id="name" name="name" required class="mt-1 block w-full bg-gray-800 border-gray-700 rounded-md shadow-sm py-2 px-3 text-white focus:outline-none focus:ring-indigo-500 focus:border-indigo-500">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-300">Email Address</label>
+                        <input type="email" id="email" name="email" required class="mt-1 block w-full bg-gray-800 border-gray-700 rounded-md shadow-sm py-2 px-3 text-white focus:outline-none focus:ring-indigo-500 focus:border-indigo-500">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-300">I'm interested in...</label>
+                        <div class="mt-2 flex flex-col md:flex-row md:space-x-6 space-y-2 md:space-y-0">
+                            <label class="inline-flex items-center">
+                                <input type="radio" name="service" value="AI Agent" class="text-indigo-500 bg-gray-800 border-gray-600 focus:ring-indigo-500" checked>
+                                <span class="ml-2 text-gray-300">AI Agent</span>
+                            </label>
+                             <label class="inline-flex items-center">
+                                <input type="radio" name="service" value="Website" class="text-indigo-500 bg-gray-800 border-gray-600 focus:ring-indigo-500">
+                                <span class="ml-2 text-gray-300">Website</span>
+                            </label>
+                             <label class="inline-flex items-center">
+                                <input type="radio" name="service" value="Mobile App" class="text-indigo-500 bg-gray-800 border-gray-600 focus:ring-indigo-500">
+                                <span class="ml-2 text-gray-300">Mobile App</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-300">Project Details</label>
+                        <textarea id="message" name="message" rows="4" required class="mt-1 block w-full bg-gray-800 border-gray-700 rounded-md shadow-sm py-2 px-3 text-white focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="cta-button text-white font-bold py-3 px-8 rounded-lg text-lg w-full md:w-auto">Book Appointment</button>
+                    </div>
+                     <div id="form-success-message" class="text-center text-green-400 mt-4 hidden">Your appointment request has been prepared. Please send the email to finalize.</div>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Terms of Service Page -->
+    <div id="terms-page" class="page hidden container mx-auto px-6 py-16 md:py-24">
+        <div class="page-white p-8 md:p-12 rounded-lg shadow-2xl">
+            <h1 class="text-4xl font-bold mb-8 gradient-text">Terms and Policies</h1>
+            <div class="policy-content">
+                <h2>Introduction</h2>
+                <p>Welcome to COZIA AI Agent. These Terms and Policies govern your access to and use of our services, including AI agents, website development, mobile applications, and related digital products. By using our services, you agree to these Terms and Policies in full. If you do not agree with any part of these terms, you must immediately stop using our services.</p>
+                <p>COZIA AI Agent provides technology-driven solutions designed to support individuals, businesses, and organizations in improving their digital presence, automating workflows, and integrating AI technologies into daily operations. These terms outline the rules, responsibilities, privacy practices, and legal obligations that protect both our company and our users.</p>
+                
+                <h2>Acceptance of Terms</h2>
+                <p>By accessing or using COZIA AI Agent’s services, you confirm that you have read, understood, and accepted these Terms and Policies. Continued use after any updates to this document means that you accept the revised terms. If at any point you disagree with these terms, your only option is to discontinue using our services.</p>
+
+                <h2>Services Provided</h2>
+                <p>COZIA AI Agent offers a range of services to help users harness the power of AI and digital technology. These include, but are not limited to:</p>
+                <ul>
+                    <li>Development and integration of AI agents tailored for business and personal use.</li>
+                    <li>Professional website design, development, and maintenance.</li>
+                    <li>Creation of mobile applications for Android and iOS platforms.</li>
+                    <li>Automation and workflow optimization tools.</li>
+                    <li>AI solutions for marketing, customer engagement, and operational efficiency.</li>
+                </ul>
+                <p>We may update or enhance services at any time to maintain security, improve performance, or introduce new features.</p>
+
+                <h2>User Responsibilities</h2>
+                <p>To use COZIA AI Agent services, users must comply with applicable laws and regulations. You agree not to use our services for unlawful or harmful purposes. Specifically, you must not:</p>
+                <ul>
+                    <li>Distribute malicious content, spam, or illegal material.</li>
+                    <li>Interfere with or disrupt the platform, systems, or other users.</li>
+                    <li>Attempt to hack, reverse-engineer, or bypass security features.</li>
+                    <li>Provide false or misleading information during registration or use.</li>
+                    <li>Exploit AI systems in ways that violate legal or ethical standards.</li>
+                </ul>
+                <p>We reserve the right to suspend or permanently terminate accounts that violate these rules.</p>
+
+                <h2>Intellectual Property Rights</h2>
+                <p>All content, software, code, designs, logos, text, graphics, AI models, and related assets created by COZIA AI Agent are the exclusive property of the company unless stated otherwise in a separate agreement.</p>
+                <p>You may not copy, reproduce, sell, distribute, or modify our intellectual property without written permission. Any unauthorized use may result in legal action and termination of access to services. If you purchase a service that grants certain rights, those rights are limited to the agreed purpose and duration.</p>
+
+                <h2>Data Privacy and Security</h2>
+                <p>COZIA AI Agent is committed to protecting your privacy and data. We collect only the information necessary to provide our services and improve user experience.</p>
+                <ul>
+                    <li><strong>Data Collection:</strong> We may collect basic user details (e.g., name, email) and technical information related to service usage.</li>
+                    <li><strong>Data Usage:</strong> Information is used strictly to deliver services, provide support, and enhance product quality.</li>
+                    <li><strong>Data Security:</strong> We implement security measures to protect data against unauthorized access, loss, or misuse.</li>
+                    <li><strong>No Unauthorized Sharing:</strong> We do not sell or share personal information with third parties unless legally required or with your explicit consent.</li>
+                </ul>
+                <p>Users are responsible for maintaining the confidentiality of their login credentials.</p>
+
+                <h2>Payment and Subscription Policy</h2>
+                <p>Some COZIA AI Agent services may require payment or subscription. By purchasing or subscribing, you agree to:</p>
+                <ul>
+                    <li>Provide accurate billing and payment information.</li>
+                    <li>Pay applicable fees according to the pricing plan.</li>
+                    <li>Allow automatic renewal of subscriptions unless canceled in advance.</li>
+                    <li>Accept that prices may include applicable taxes or fees.</li>
+                </ul>
+                <p>Failure to complete payment may result in the suspension or termination of services.</p>
+
+                <h2>Refund Policy</h2>
+                <p>Refunds are provided only under exceptional circumstances. If we fail to deliver the agreed service, you may submit a refund request within the period stated in your agreement.</p>
+                <ul>
+                    <li>Refund eligibility is determined on a case-by-case basis.</li>
+                    <li>Refunds are not available for completed or delivered work unless clear service failure is proven.</li>
+                    <li>COZIA AI Agent reserves the right to deny refund requests if terms are violated by the user.</li>
+                </ul>
+                
+                <h2>Limitation of Liability</h2>
+                <p>COZIA AI Agent is not liable for any indirect, incidental, or consequential damages resulting from:</p>
+                <ul>
+                    <li>The use or inability to use our services.</li>
+                    <li>Service interruptions, downtime, or data loss.</li>
+                    <li>Unauthorized access or misuse of services by third parties.</li>
+                    <li>User negligence, misuse, or errors.</li>
+                </ul>
+                <p>Our total liability shall not exceed the amount paid by the user for the specific service in question.</p>
+                
+                <h2>Modifications to Terms</h2>
+                <p>We may revise these Terms and Policies at any time. Updated versions will be posted and effective immediately. Users are encouraged to review this policy regularly. Continued use of our services after changes means acceptance of the revised terms.</p>
+
+                <h2>Termination of Services</h2>
+                <p>COZIA AI Agent may suspend or terminate your account or service access without prior notice if:</p>
+                <ul>
+                    <li>You violate these Terms and Policies.</li>
+                    <li>You engage in fraudulent, harmful, or illegal activities.</li>
+                    <li>You misuse the platform in a way that compromises its security or functionality.</li>
+                </ul>
+                <p>Termination does not release you from existing legal or financial obligations.</p>
+
+                <h2>Governing Law and Jurisdiction</h2>
+                <p>These Terms and Policies are governed by the laws of the relevant jurisdiction. Any disputes will be resolved through legal proceedings in the appropriate courts. By using our services, you agree to submit to this jurisdiction.</p>
+
+                <h2>No Warranty</h2>
+                <p>We strive to provide reliable, secure, and efficient services. However, COZIA AI Agent provides all services “as is” without warranties of any kind, express or implied. We do not guarantee uninterrupted service, error-free performance, or specific outcomes.</p>
+                <p>Users acknowledge that AI technology evolves rapidly, and outcomes may vary depending on data, integration, and external factors.</p>
+
+                <h2>Third-Party Services</h2>
+                <p>Some features or integrations may rely on third-party services. COZIA AI Agent is not responsible for the content, performance, or policies of third-party providers. Users are encouraged to review those third parties’ terms separately before use.</p>
+
+                <h2>User Consent and Agreement</h2>
+                <p>By creating an account, subscribing, or using any COZIA AI Agent product or service, you agree to be bound by these Terms and Policies. If you do not agree, you must discontinue the use of our services.</p>
+
+                <h2>Final Notes</h2>
+                <p>COZIA AI Agent is dedicated to delivering advanced AI and digital solutions with integrity, security, and professionalism. These Terms and Policies ensure a transparent and fair relationship with every user. We encourage all users to review this document carefully and comply fully with these terms to maintain a secure and efficient digital environment.</p>
+            </div>
+            <a href="#" class="mt-8 inline-block cta-button text-white font-semibold py-2 px-6 rounded-lg">&larr; Go Back</a>
+        </div>
+    </div>
+
+    <!-- Privacy Policy Page -->
+    <div id="privacy-page" class="page hidden container mx-auto px-6 py-16 md:py-24">
+        <div class="page-white p-8 md:p-12 rounded-lg shadow-2xl">
+            <h1 class="text-4xl font-bold mb-8 gradient-text">COZIA AI Agent – Terms and Policies</h1>
+            <div class="policy-content">
+                <h2>Introduction</h2>
+                <p>Welcome to COZIA AI Agent. These Terms and Policies govern your access to and use of our services, including AI agents, website development, mobile applications, and related digital products. By using our services, you agree to these Terms and Policies in full. If you do not agree with any part of these terms, you must immediately stop using our services.</p>
+                <p>COZIA AI Agent provides technology-driven solutions designed to support individuals, businesses, and organizations in improving their digital presence, automating workflows, and integrating AI technologies into daily operations. These terms outline the rules, responsibilities, privacy practices, and legal obligations that protect both our company and our users.</p>
+                
+                <h2>Acceptance of Terms</h2>
+                <p>By accessing or using COZIA AI Agent’s services, you confirm that you have read, understood, and accepted these Terms and Policies. Continued use after any updates to this document means that you accept the revised terms. If at any point you disagree with these terms, your only option is to discontinue using our services.</p>
+
+                <h2>Services Provided</h2>
+                <p>COZIA AI Agent offers a range of services to help users harness the power of AI and digital technology. These include, but are not limited to:</p>
+                <ul>
+                    <li>Development and integration of AI agents tailored for business and personal use.</li>
+                    <li>Professional website design, development, and maintenance.</li>
+                    <li>Creation of mobile applications for Android and iOS platforms.</li>
+                    <li>Automation and workflow optimization tools.</li>
+                    <li>AI solutions for marketing, customer engagement, and operational efficiency.</li>
+                </ul>
+                <p>We may update or enhance services at any time to maintain security, improve performance, or introduce new features.</p>
+
+                <h2>User Responsibilities</h2>
+                <p>To use COZIA AI Agent services, users must comply with applicable laws and regulations. You agree not to use our services for unlawful or harmful purposes. Specifically, you must not:</p>
+                <ul>
+                    <li>Distribute malicious content, spam, or illegal material.</li>
+                    <li>Interfere with or disrupt the platform, systems, or other users.</li>
+                    <li>Attempt to hack, reverse-engineer, or bypass security features.</li>
+                    <li>Provide false or misleading information during registration or use.</li>
+                    <li>Exploit AI systems in ways that violate legal or ethical standards.</li>
+                </ul>
+                <p>We reserve the right to suspend or permanently terminate accounts that violate these rules.</p>
+
+                <h2>Intellectual Property Rights</h2>
+                <p>All content, software, code, designs, logos, text, graphics, AI models, and related assets created by COZIA AI Agent are the exclusive property of the company unless stated otherwise in a separate agreement.</p>
+                <p>You may not copy, reproduce, sell, distribute, or modify our intellectual property without written permission. Any unauthorized use may result in legal action and termination of access to services. If you purchase a service that grants certain rights, those rights are limited to the agreed purpose and duration.</p>
+
+                <h2>Data Privacy and Security</h2>
+                <p>COZIA AI Agent is committed to protecting your privacy and data. We collect only the information necessary to provide our services and improve user experience.</p>
+                <ul>
+                    <li><strong>Data Collection:</strong> We may collect basic user details (e.g., name, email) and technical information related to service usage.</li>
+                    <li><strong>Data Usage:</strong> Information is used strictly to deliver services, provide support, and enhance product quality.</li>
+                    <li><strong>Data Security:</strong> We implement security measures to protect data against unauthorized access, loss, or misuse.</li>
+                    <li><strong>No Unauthorized Sharing:</strong> We do not sell or share personal information with third parties unless legally required or with your explicit consent.</li>
+                </ul>
+                <p>Users are responsible for maintaining the confidentiality of their login credentials.</p>
+
+                <h2>Payment and Subscription Policy</h2>
+                <p>Some COZIA AI Agent services may require payment or subscription. By purchasing or subscribing, you agree to:</p>
+                <ul>
+                    <li>Provide accurate billing and payment information.</li>
+                    <li>Pay applicable fees according to the pricing plan.</li>
+                    <li>Allow automatic renewal of subscriptions unless canceled in advance.</li>
+                    <li>Accept that prices may include applicable taxes or fees.</li>
+                </ul>
+                <p>Failure to complete payment may result in the suspension or termination of services.</p>
+
+                <h2>Refund Policy</h2>
+                <p>Refunds are provided only under exceptional circumstances. If we fail to deliver the agreed service, you may submit a refund request within the period stated in your agreement.</p>
+                <ul>
+                    <li>Refund eligibility is determined on a case-by-case basis.</li>
+                    <li>Refunds are not available for completed or delivered work unless clear service failure is proven.</li>
+                    <li>COZIA AI Agent reserves the right to deny refund requests if terms are violated by the user.</li>
+                </ul>
+                
+                <h2>Limitation of Liability</h2>
+                <p>COZIA AI Agent is not liable for any indirect, incidental, or consequential damages resulting from:</p>
+                <ul>
+                    <li>The use or inability to use our services.</li>
+                    <li>Service interruptions, downtime, or data loss.</li>
+                    <li>Unauthorized access or misuse of services by third parties.</li>
+                    <li>User negligence, misuse, or errors.</li>
+                </ul>
+                <p>Our total liability shall not exceed the amount paid by the user for the specific service in question.</p>
+                
+                <h2>Modifications to Terms</h2>
+                <p>We may revise these Terms and Policies at any time. Updated versions will be posted and effective immediately. Users are encouraged to review this policy regularly. Continued use of our services after changes means acceptance of the revised terms.</p>
+
+                <h2>Termination of Services</h2>
+                <p>COZIA AI Agent may suspend or terminate your account or service access without prior notice if:</p>
+                <ul>
+                    <li>You violate these Terms and Policies.</li>
+                    <li>You engage in fraudulent, harmful, or illegal activities.</li>
+                    <li>You misuse the platform in a way that compromises its security or functionality.</li>
+                </ul>
+                <p>Termination does not release you from existing legal or financial obligations.</p>
+
+                <h2>Governing Law and Jurisdiction</h2>
+                <p>These Terms and Policies are governed by the laws of the relevant jurisdiction. Any disputes will be resolved through legal proceedings in the appropriate courts. By using our services, you agree to submit to this jurisdiction.</p>
+
+                <h2>No Warranty</h2>
+                <p>We strive to provide reliable, secure, and efficient services. However, COZIA AI Agent provides all services “as is” without warranties of any kind, express or implied. We do not guarantee uninterrupted service, error-free performance, or specific outcomes.</p>
+                <p>Users acknowledge that AI technology evolves rapidly, and outcomes may vary depending on data, integration, and external factors.</p>
+
+                <h2>Third-Party Services</h2>
+                <p>Some features or integrations may rely on third-party services. COZIA AI Agent is not responsible for the content, performance, or policies of third-party providers. Users are encouraged to review those third parties’ terms separately before use.</p>
+
+                <h2>User Consent and Agreement</h2>
+                <p>By creating an account, subscribing, or using any COZIA AI Agent product or service, you agree to be bound by these Terms and Policies. If you do not agree, you must discontinue the use of our services.</p>
+
+                <h2>Final Notes</h2>
+                <p>COZIA AI Agent is dedicated to delivering advanced AI and digital solutions with integrity, security, and professionalism. These Terms and Policies ensure a transparent and fair relationship with every user. We encourage all users to review this document carefully and comply fully with these terms to maintain a secure and efficient digital environment.</p>
+            </div>
+            <a href="#" class="mt-8 inline-block cta-button text-white font-semibold py-2 px-6 rounded-lg">&larr; Go Back</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-800 mt-24 md:mt-32">
+        <div class="container mx-auto px-6 py-8 text-center text-gray-400">
+            <p class="mb-4">
+                <a href="mailto:syedirteza021@gmail.com" class="hover:text-white transition">syedirteza021@gmail.com</a>
+            </p>
+            <div class="flex justify-center space-x-6 mb-4">
+                <a href="#terms" class="hover:text-white transition">Terms of Service</a>
+                <a href="#privacy" class="hover:text-white transition">Privacy Policy</a>
+            </div>
+            <p>&copy; 2025 Cozia AI. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

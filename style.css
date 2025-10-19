@@ -1,0 +1,73 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #0A0A0A;
+    color: #E2E8F0;
+}
+.gradient-text {
+    background: linear-gradient(to right, #38bdf8, #818cf8, #c084fc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.cta-button {
+    background: linear-gradient(to right, #38bdf8, #818cf8);
+    transition: all 0.3s ease;
+}
+.cta-button:hover {
+    box-shadow: 0 0 20px #818cf8a0;
+    transform: translateY(-2px);
+}
+.feature-card {
+    border: 1px solid #27272a;
+    background-color: #18181b;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+.feature-card:hover {
+    transform: translateY(-5px);
+    border-color: #818cf8;
+}
+.policy-content h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+.policy-content p {
+    margin-bottom: 1rem;
+    line-height: 1.75;
+}
+.policy-content ul {
+    list-style-type: disc;
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+/* Styles for the white policy pages */
+.page-white {
+    background-color: white;
+    color: #1c1917; /* Dark text color */
+}
+.page-white .gradient-text {
+    /* A new, darker gradient for better readability on a white background */
+    background: linear-gradient(to right, #1d4ed8, #5b21b6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.page-white .policy-content h2 {
+    color: #1c1917;
+}
+.page-white .policy-content p, .page-white .policy-content li {
+    color: #3f3f46;
+}
+/* Custom scrollbar for a more modern look */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #18181b;
+}
+::-webkit-scrollbar-thumb {
+    background: #38bdf8;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #818cf8;
+}
